@@ -13,7 +13,7 @@ const data = [
   },
   {
     title: "Research Lab",
-    img: "http://localhost:5173images/lab.svg",
+    img: "https://smart-school-and-college.vercel.app/images/lab.svg",
   },
 ];
 

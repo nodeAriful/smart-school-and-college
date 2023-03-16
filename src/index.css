@@ -8,3 +8,6 @@ button {
 .d_active {
   @apply bg-teal-600 text-white;
 }
+.icon_active {
+  @apply text-white;
+}

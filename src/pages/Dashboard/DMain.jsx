@@ -1,22 +1,147 @@
-
-import { Button } from "@material-tailwind/react";
-
 import React from "react";
+import { DChart } from "./DChart";
 
 const DMain = () => {
   return (
     <>
       <main>
         <div className="pt-6 px-4">
+          <div className="my-4 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <span className="text-2xl sm:text-3xl leading-none font-bold text-teal-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-10 h-10 inline-block"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                      />
+                    </svg>
+
+                    <span> 2,340</span>
+                  </span>
+                  <h3 className="text-base font-normal text-gray-500">
+                    Total Student
+                  </h3>
+                </div>
+                <div className="ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold">
+                  14.6%
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <span className="text-2xl sm:text-3xl leading-none font-bold text-gray-900">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-10 h-10 inline-block"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                      />
+                    </svg>
+
+                    <span>5,355</span>
+                  </span>
+                  <h3 className="text-base font-normal text-gray-500">
+                    Total Teacher
+                  </h3>
+                </div>
+                <div className="ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold">
+                  32.9%
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <span className="text-2xl sm:text-3xl leading-none font-bold text-teal-700">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-10 h-10 inline-block"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                      />
+                    </svg>
+                    <span> 385</span>
+                  </span>
+                  <h3 className="text-base font-normal text-gray-500">
+                    Graduation Complete
+                  </h3>
+                </div>
+                <div className="ml-5 w-0 flex items-center justify-end flex-1 text-red-500 text-base font-bold">
+                  -2.7%
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="w-full grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4">
             <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8  2xl:col-span-2">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex-shrink-0">
                   <span className="text-2xl sm:text-3xl leading-none font-bold text-gray-900">
-                    $45,385
+                    385
                   </span>
                   <h3 className="text-base font-normal text-gray-500">
-                    Sales this week
+                    Regular Present of Students
                   </h3>
                 </div>
                 <div className="flex items-center justify-end flex-1 text-green-500 text-base font-bold">
@@ -35,34 +160,46 @@ const DMain = () => {
                   </svg>
                 </div>
               </div>
-              <div id="main-chart"></div>
+              {/* <div id="main-chart"></div> */}
+              <DChart />
             </div>
             <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
               <div className="mb-4 flex items-center justify-between">
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Latest Transactions
+                    All Subject of this School
                   </h3>
                   <span className="text-base font-normal text-gray-500">
-                    This is a list of latest transactions
+                    Class:{" "}
+                    <span className="text-teal-500">Six to Intermediate</span>
                   </span>
                 </div>
-                <div className="flex-shrink-0">
-                  <a
+                <div className="flex flex-col items-center">
+                  <button
                     href="#"
-                    className="text-sm font-medium text-cyan-600 hover:bg-gray-100 rounded-lg p-2"
+                    className="text-sm font-medium text-teal-600  hover:bg-rose-100 rounded-full duration-300  p-2"
                   >
-                    View all
-                  </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-white hover:text-teal-600"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div className="flex flex-col mt-8">
                 <div className="overflow-x-auto rounded-lg">
                   <div className="align-middle inline-block min-w-full">
                     <div className="shadow overflow-hidden sm:rounded-lg">
-
-                      <Button>Create Institute</Button>
-
                       <table className="min-w-full divide-y divide-gray-200">
                         <thead className="bg-gray-50">
                           <tr>
@@ -177,96 +314,13 @@ const DMain = () => {
                           </tr>
                         </tbody>
                       </table>
-
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-4 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-            <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <span className="text-2xl sm:text-3xl leading-none font-bold text-gray-900">
-                    2,340
-                  </span>
-                  <h3 className="text-base font-normal text-gray-500">
-                    New products this week
-                  </h3>
-                </div>
-                <div className="ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold">
-                  14.6%
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <span className="text-2xl sm:text-3xl leading-none font-bold text-gray-900">
-                    5,355
-                  </span>
-                  <h3 className="text-base font-normal text-gray-500">
-                    Visitors this week
-                  </h3>
-                </div>
-                <div className="ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold">
-                  32.9%
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <span className="text-2xl sm:text-3xl leading-none font-bold text-gray-900">
-                    385
-                  </span>
-                  <h3 className="text-base font-normal text-gray-500">
-                    User signups this week
-                  </h3>
-                </div>
-                <div className="ml-5 w-0 flex items-center justify-end flex-1 text-red-500 text-base font-bold">
-                  -2.7%
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div className="grid grid-cols-1 2xl:grid-cols-2 xl:gap-4 my-4">
             <div className="bg-white shadow rounded-lg mb-4 p-4 sm:p-6 h-full">
               <div className="flex items-center justify-between mb-4">
